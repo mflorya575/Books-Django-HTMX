@@ -37,7 +37,10 @@
     <!--  Ячейка кнопок действия -->
     <td>
         <!-- Кнопка "Edit" -->
-        <button class="disbtn">
+        <button class="disbtn"
+                hx-put="{% url 'update_book_details' book.id %}"
+                hx-target="closest tr"
+                hx-swap="outerHTML" >
             Edit
         </button>
 

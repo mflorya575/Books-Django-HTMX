@@ -10,3 +10,9 @@ class BookCreateForm(ModelForm):
     class Meta:
         model = Book
         fields = ['title', 'author', 'price']
+
+
+class BookEditForm(BookCreateForm):
+    title = CharField(required=False, widget=TextInput())
+    author = CharField(required=False, widget=TextInput())
+    price = CharField(required=False, widget=TextInput())
