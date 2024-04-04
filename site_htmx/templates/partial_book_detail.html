@@ -1,0 +1,49 @@
+<tr>
+    <!-- Ячейка номера книги -->
+    <td>
+        {{ book.id }}
+    </td>
+
+    <!-- Ячейка названия книги -->
+    <td>
+        {{ book.title }}
+    </td>
+
+    <!-- Ячейка автора книги -->
+    <td>
+        {{ book.author }}
+    </td>
+
+    <!-- Ячейка цены книги -->
+    <td>
+        {{ book.price }}
+    </td>
+
+    <!-- Ячейка состояния -->
+    <td>
+        {% if not book.read %}
+            <!-- Кнопка "Unread" -->
+            <button class="disbtn">
+                Unread
+            </button>
+        {% else %}
+            <!-- Кнопка "Read" -->
+            <button class="disbtn">
+                Read
+            </button>
+        {% endif %}
+    </td>
+
+    <!--  Ячейка кнопок действия -->
+    <td>
+        <!-- Кнопка "Edit" -->
+        <button class="disbtn">
+            Edit
+        </button>
+
+        <!-- Кнопка "Delete" -->
+        <button class="disbtn">
+            Delete
+        </button>
+    </td>
+</tr>
