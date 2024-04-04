@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Books{% endblock title %}</title>
+</head>
+
+<body>
+
+<div>
+    <div>
+        <div>
+            <!-- Таблица книг -->
+
+            <table>
+                <thead>
+                <tr>
+                    <!-- Заголовки столбцов таблицы -->
+
+                    <!-- Заголовок номера книги -->
+                    <th scope="col" style="width: 10%">
+                        <small>
+                            Num.
+                        </small>
+                    </th>
+
+                    <!-- Заголовок названия книги -->
+                    <th scope="col" style="width: 26%">
+                        <small>
+                            Title
+                        </small>
+                    </th>
+
+                    <!-- Заголовок автора книги -->
+                    <th scope="col" style="width: 26%">
+                        <small>
+                            Author
+                        </small>
+                    </th>
+
+                    <!-- Заголовок цены книги -->
+                    <th scope="col" style="width: 11%">
+                        <small>
+                            Price ($)
+                        </small>
+                    </th>
+
+                    <!-- Заголовок статуса книги -->
+                    <th scope="col" style="width: 11%">
+                        <small>
+                            Status
+                        </small>
+                    </th>
+
+                    <!-- Заголовок кнопок действия -->
+                    <th scope="col" style="width: 16%">
+                        <small>
+                            Actions
+                        </small>
+                    </th>
+
+                </tr>
+                </thead>
+
+                <!-- Список книг -->
+                <tbody id="book-list">
+                {% include "partial_book_list.html" %}
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
