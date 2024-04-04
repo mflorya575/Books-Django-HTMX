@@ -14,7 +14,13 @@
 
         <div>
             <!-- Кнопка "Add book" -->
-            <button type="submit" class="disbtn"> Add book</button>
+            <button type="submit"
+                    class="disbtn"
+                    hx-post="{% url 'create_book' %}"
+                    hx-target="#book-list"
+                    hx-swap="beforeend" >
+                Add book
+            </button>
         </div>
     </div>
 </form>
