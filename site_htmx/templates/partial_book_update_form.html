@@ -37,11 +37,17 @@
                         <!--  Ячейка кнопок действия -->
                         <td>
                             <!-- Кнопка "Save" -->
-                            <button type="submit">
+                            <button type="submit"
+                                    hx-post="{% url 'update_book_details' book.id %}"
+                                    hx-target="closest tr"
+                                    hx-swap="outerHTML"
+                                    hx-include="closest tr" >
                                 Save
                             </button>
                             <!-- Кнопка "Cancel" -->
-                            <button>
+                            <button hx-get="{% url 'book_detail' book.id %}"
+                                    hx-target="closest tr"
+                                    hx-swap="outerHTML" >
                                 Cancel
                             </button>
                         </td>
