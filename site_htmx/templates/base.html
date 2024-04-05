@@ -16,52 +16,104 @@
             <form>
             <table>
                 <thead>
-                <tr>
-                    <!-- Заголовки столбцов таблицы -->
+                    <tr>
+                        <!-- Заголовки столбцов таблицы -->
 
-                    <!-- Заголовок номера книги -->
-                    <th scope="col" style="width: 10%">
-                        <small>
-                            Num.
-                        </small>
-                    </th>
+                        <!-- Заголовок номера книги -->
+                        <th scope="col" style="width: 10%">
+                            <small>
+                                No.
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='id' direction='ascend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇓
+                                </a>
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='id' direction='descend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇑
+                                </a>
+                            </small>
+                        </th>
 
-                    <!-- Заголовок названия книги -->
-                    <th scope="col" style="width: 26%">
-                        <small>
-                            Title
-                        </small>
-                    </th>
+                        <!-- Заголовок названия книги -->
+                        <th scope="col" style="width: 26%">
+                            <small>
+                                Title
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='title' direction='ascend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇓
+                                </a>
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='title' direction='descend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇑
+                                </a>
+                            </small>
+                        </th>
 
-                    <!-- Заголовок автора книги -->
-                    <th scope="col" style="width: 26%">
-                        <small>
-                            Author
-                        </small>
-                    </th>
+                        <!-- Заголовок автора книги -->
+                        <th scope="col" style="width: 26%">
+                            <small>
+                                Author
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='author' direction='ascend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇓
+                                </a>
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='author' direction='descend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇑
+                                </a>
+                            </small>
+                        </th>
 
-                    <!-- Заголовок цены книги -->
-                    <th scope="col" style="width: 11%">
-                        <small>
-                            Price ($)
-                        </small>
-                    </th>
+                        <!-- Заголовок цены книги -->
+                        <th scope="col" style="width: 11%">
+                            <small>
+                                Price ($)
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='price' direction='ascend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇓
+                                </a>
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='price' direction='descend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇑
+                                </a>
+                            </small>
+                        </th>
 
-                    <!-- Заголовок статуса книги -->
-                    <th scope="col" style="width: 11%">
-                        <small>
-                            Status
-                        </small>
-                    </th>
-
-                    <!-- Заголовок кнопок действия -->
-                    <th scope="col" style="width: 16%">
-                        <small>
-                            Actions
-                        </small>
-                    </th>
-
-                </tr>
+                        <!-- Заголовок статуса книги -->
+                        <th scope="col" style="width: 11%">
+                            <small>
+                                Status
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='read' direction='descend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇓
+                                </a>
+                                <a href=""
+                                   hx-get="{% url 'book_list_sort' filter='read' direction='ascend' %}"
+                                   hx-target="#book-list"
+                                   hx-swap="innerHTML">
+                                    ⇑
+                                </a>
+                            </small>
+                        </th>
+                    </tr>
                 </thead>
 
                 <!-- Список книг -->
