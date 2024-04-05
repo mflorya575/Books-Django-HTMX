@@ -47,3 +47,8 @@ a {
 .table-button {
     font-size: 13px;
 }
+
+.disabled-button {
+      opacity: 0.5;
+      pointer-events: none;
+}

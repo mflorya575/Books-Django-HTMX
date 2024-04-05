@@ -27,99 +27,99 @@
                         <!-- Заголовки столбцов таблицы -->
 
                         <!-- Заголовок номера книги -->
-                        <th scope="col" style="width: 10%" class="text-center">
-                            <small>
-                                No.
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='id' direction='ascend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-down-square ms-1"></i>
-                                </a>
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='id' direction='descend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-up-square"></i>
-                                </a>
-                            </small>
-                        </th>
+                            <th scope="col" style="width: 10%" class="text-center">
+                                <small>
+                                    No.
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='id' direction='ascend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-down-square ms-1 id-ascend disabled-button"></i>
+                                    </a>
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='id' direction='descend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-up-square id-descend"></i>
+                                    </a>
+                                </small>
+                            </th>
 
-                        <!-- Заголовок названия книги -->
-                        <th scope="col" style="width: 26%" class="text-center">
-                            <small>
-                                Title
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='title' direction='ascend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-down-square ms-1"></i>
-                                </a>
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='title' direction='descend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-up-square"></i>
-                                </a>
-                            </small>
-                        </th>
+                            <!-- Заголовок названия книги -->
+                            <th scope="col" style="width: 26%" class="text-center">
+                                <small>
+                                    Title
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='title' direction='ascend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-down-square ms-1 title-ascend"></i>
+                                    </a>
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='title' direction='descend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-up-square title-descend"></i>
+                                    </a>
+                                </small>
+                            </th>
 
-                        <!-- Заголовок автора книги -->
-                        <th scope="col" style="width: 26%" class="text-center">
-                            <small>
-                                Author
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='author' direction='ascend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-down-square ms-1"></i>
-                                </a>
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='author' direction='descend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-up-square"></i>
-                                </a>
-                            </small>
-                        </th>
+                            <!-- Заголовок автора книги -->
+                            <th scope="col" style="width: 26%" class="text-center">
+                                <small>
+                                    Author
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='author' direction='ascend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-down-square ms-1 author-ascend"></i>
+                                    </a>
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='author' direction='descend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-up-square author-descend"></i>
+                                    </a>
+                                </small>
+                            </th>
 
-                        <!-- Заголовок цены книги -->
-                        <th scope="col" style="width: 11%" class="text-center">
-                            <small>
-                                Price ($)
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='price' direction='ascend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-down-square ms-1"></i>
-                                </a>
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='price' direction='descend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-up-square"></i>
-                                </a>
-                            </small>
-                        </th>
+                            <!-- Заголовок цены книги -->
+                            <th scope="col" style="width: 11%" class="text-center">
+                                <small>
+                                    Price ($)
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='price' direction='ascend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-down-square ms-1 price-ascend"></i>
+                                    </a>
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='price' direction='descend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-up-square price-descend"></i>
+                                    </a>
+                                </small>
+                            </th>
 
-                        <!-- Заголовок статуса книги -->
-                        <th scope="col" style="width: 11%" class="text-center">
-                            <small>
-                                Status
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='read' direction='descend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-down-square ms-1"></i>
-                                </a>
-                                <a href=""
-                                   hx-get="{% url 'book_list_sort' filter='read' direction='ascend' %}"
-                                   hx-target="#book-list"
-                                   hx-swap="innerHTML">
-                                    <i class="table-icon bi bi-arrow-up-square"></i>
-                                </a>
-                            </small>
-                        </th>
+                            <!-- Заголовок статуса книги -->
+                            <th scope="col" style="width: 11%" class="text-center">
+                                <small>
+                                    Status
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='read' direction='descend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-down-square ms-1 read-descend"></i>
+                                    </a>
+                                    <a href=""
+                                       hx-get="{% url 'book_list_sort' filter='read' direction='ascend' %}"
+                                       hx-target="#book-list"
+                                       hx-swap="innerHTML" >
+                                        <i class="table-icon bi bi-arrow-up-square read-ascend"></i>
+                                    </a>
+                                </small>
+                            </th>
 
                         <!-- Заголовок кнопок действия -->
                         <th scope="col" style="width: 16%" class="text-center">
@@ -148,27 +148,33 @@
         crossorigin="anonymous"></script>
 
 <script>
-    function cngElementsAtr(cls, atr, val) {
-        var elems = document.getElementsByClassName(cls);
-        for (var i = 0; i < elems.length; i++) {
-            elems[i][atr] = val;
-        }
-    }
-
-    document.body.addEventListener('htmx:afterRequest', (event) => {
-        path_str = event.detail.pathInfo.requestPath;
-        if (path_str.includes('create_book')) {
-            cngElementsAtr('clrtxt', 'value', '');
-        } else if (path_str.includes('update_book_details')) {
-            if (event.detail.requestConfig.verb === 'put') {
-                cngElementsAtr('disbtn', 'disabled', true);
-            } else {
-                cngElementsAtr('disbtn', 'disabled', false);
+        function cngElementsAtr(cls, atr, val){
+            var elems = document.getElementsByClassName(cls);
+            for(var i = 0; i < elems.length; i++) {
+                elems[i][atr] = val;
             }
-        } else if (path_str.includes('book_detail')) {
-            cngElementsAtr('disbtn', 'disabled', false);
         }
-    });
-</script>
+        document.body.addEventListener('htmx:afterRequest', (event) => {
+            path_str = event.detail.pathInfo.requestPath;
+            if(path_str.includes('create_book')){
+                cngElementsAtr('clrtxt', 'value', '');
+            }else if(path_str.includes('update_book_details')){
+                if(event.detail.requestConfig.verb === 'put'){
+                    cngElementsAtr('disbtn', 'disabled', true);
+                }else{
+                    cngElementsAtr('disbtn', 'disabled', false);
+                }
+            }else if(path_str.includes('book_detail')){
+                cngElementsAtr('disbtn', 'disabled', false);
+            }else if(path_str.includes('book_list_sort')){
+                path_arr = path_str.split('/');
+                path_arr.pop()
+                curr_class = path_arr.pop()
+                curr_class = path_arr.pop() + '-' + curr_class
+                document.getElementsByClassName('disabled-button')[0].classList.remove('disabled-button');
+                document.getElementsByClassName(curr_class)[0].classList.add('disabled-button');
+            }
+        });
+    </script>
 </body>
 </html>
