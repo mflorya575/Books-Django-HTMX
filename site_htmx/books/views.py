@@ -44,3 +44,14 @@ def delete_book(request, pk):
     book = get_object_or_404(Book, pk=pk)
     book.delete()
     return HttpResponse()
+
+
+@require_http_methods(['PUT'])
+def update_book_status(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    if book.read:
+        book.read = False
+    else:
+        book.read = True
+    book.save()
+    return render(request, 'partial_book_detail.html', {'book': book})
