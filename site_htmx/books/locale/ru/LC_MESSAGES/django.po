@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-10 20:47+0300\n"
+"POT-Creation-Date: 2024-04-10 21:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,3 +35,57 @@ msgstr "Цена"
 #: .\books\models.py:9
 msgid "Read"
 msgstr "Прочитано"
+
+#: .\books\urls.py:9
+msgid "create_book/"
+msgstr "создать_книгу/"
+
+#: .\books\urls.py:10
+msgid "update_book_details/<int:pk>/"
+msgstr "обновить_детали_книги/<int:pk>/"
+
+#: .\books\urls.py:11
+msgid "book_detail/<int:pk>/"
+msgstr "детали_книги/<int:pk>/"
+
+#: .\books\urls.py:12
+msgid "delete_book/<int:pk>/"
+msgstr "удалить_книгу/<int:pk>/"
+
+#: .\books\urls.py:13
+msgid "update_book_status/<int:pk>/"
+msgstr "обновить_статус_книги/<int:pk>/"
+
+#: .\books\urls.py:14
+msgid "book_list_sort/<filter>/<direction>/"
+msgstr "сортировка_списка_книг/<filter>/<direction>/"
+
+#: .\books\views.py:63
+msgid "id"
+msgstr "идентификатор"
+
+#: .\books\views.py:64
+#, fuzzy
+#| msgid "Title"
+msgid "title"
+msgstr "Название"
+
+#: .\books\views.py:65
+#, fuzzy
+#| msgid "Author"
+msgid "author"
+msgstr "Автор"
+
+#: .\books\views.py:66
+#, fuzzy
+#| msgid "Price"
+msgid "price"
+msgstr "Цена"
+
+#: .\books\views.py:67
+msgid "read"
+msgstr "прочитано"
+
+#: .\books\views.py:70
+msgid "ascend"
+msgstr "возрастание"
