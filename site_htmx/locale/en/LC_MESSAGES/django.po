@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-10 20:20+0300\n"
+"POT-Creation-Date: 2024-04-10 20:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,73 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\site_htmx\settings.py:115
 msgid "English"
 msgstr ""
 
 #: .\site_htmx\settings.py:116
 msgid "Russian"
+msgstr ""
+
+#: .\templates\base.html:8
+msgid "Books"
+msgstr ""
+
+#: .\templates\base.html:32
+msgid "No."
+msgstr ""
+
+#: .\templates\base.html:51
+msgid "Title"
+msgstr ""
+
+#: .\templates\base.html:70
+msgid "Author"
+msgstr ""
+
+#: .\templates\base.html:89
+msgid "Price ($)"
+msgstr ""
+
+#: .\templates\base.html:108
+msgid "Status"
+msgstr ""
+
+#: .\templates\base.html:127
+msgid "Actions"
+msgstr ""
+
+#: .\templates\partial_book_detail.html:32
+#: .\templates\partial_book_update_form.html:29
+msgid "Unread"
+msgstr ""
+
+#: .\templates\partial_book_detail.html:40
+#: .\templates\partial_book_update_form.html:34
+msgid "Read"
+msgstr ""
+
+#: .\templates\partial_book_detail.html:52
+msgid "Edit"
+msgstr ""
+
+#: .\templates\partial_book_detail.html:60
+msgid "Are you sure you wish to delete this book?"
+msgstr ""
+
+#: .\templates\partial_book_detail.html:61
+msgid "Delete"
+msgstr ""
+
+#: .\templates\partial_book_update_form.html:48
+msgid "Save"
+msgstr ""
+
+#: .\templates\partial_book_update_form.html:55
+msgid "Cancel"
+msgstr ""
+
+#: .\templates\partial_create_book_form.html:24
+msgid "Add book"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-10 20:30+0300\n"
+"POT-Creation-Date: 2024-04-10 20:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\books\models.py:6
+
+#: .\books\forms.py:7 .\books\models.py:6
 msgid "Title"
 msgstr ""
 
-#: .\books\models.py:7
+#: .\books\forms.py:8 .\books\models.py:7
 msgid "Author"
 msgstr ""
 
-#: .\books\models.py:8
+#: .\books\forms.py:9 .\books\models.py:8
 msgid "Price"
 msgstr ""
 

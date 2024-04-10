@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-10 20:20+0300\n"
+"POT-Creation-Date: 2024-04-10 20:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,9 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
 #: .\site_htmx\settings.py:115
 msgid "English"
 msgstr "Английский"
@@ -26,3 +27,65 @@ msgstr "Английский"
 #: .\site_htmx\settings.py:116
 msgid "Russian"
 msgstr "Русский"
+
+#: .\templates\base.html:8
+msgid "Books"
+msgstr "Книги"
+
+#: .\templates\base.html:32
+msgid "No."
+msgstr "Номер"
+
+#: .\templates\base.html:51
+msgid "Title"
+msgstr "Название"
+
+#: .\templates\base.html:70
+msgid "Author"
+msgstr "Автор"
+
+#: .\templates\base.html:89
+msgid "Price ($)"
+msgstr "Цена"
+
+#: .\templates\base.html:108
+msgid "Status"
+msgstr "Статус"
+
+#: .\templates\base.html:127
+msgid "Actions"
+msgstr "Действия"
+
+#: .\templates\partial_book_detail.html:32
+#: .\templates\partial_book_update_form.html:29
+msgid "Unread"
+msgstr "Не прочитано"
+
+#: .\templates\partial_book_detail.html:40
+#: .\templates\partial_book_update_form.html:34
+msgid "Read"
+msgstr "Прочитано"
+
+#: .\templates\partial_book_detail.html:52
+msgid "Edit"
+msgstr "Изменить"
+
+#: .\templates\partial_book_detail.html:60
+msgid "Are you sure you wish to delete this book?"
+msgstr "Вы уверены, что хотите удалить эту книгу?"
+
+#: .\templates\partial_book_detail.html:61
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\partial_book_update_form.html:48
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\partial_book_update_form.html:55
+msgid "Cancel"
+msgstr "Отменить"
+
+#: .\templates\partial_create_book_form.html:24
+msgid "Add book"
+msgstr "Добавить"
