@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
     # Приложения
     'books.apps.BooksConfig',
+
+    # Сторонние библиотеки
+    'rosetta',
 ]
 
 MIDDLEWARE = [
