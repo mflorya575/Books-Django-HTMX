@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <tr class="{% if book.read %}grey-text{% endif %}">
     <!-- Ячейка номера книги -->
     <td class="align-middle text-center ps-2">
@@ -27,7 +29,7 @@
                     hx-put="{% url 'update_book_status' book.id %}"
                     hx-target="closest tr"
                     hx-swap="outerHTML">
-                Unread
+                {% trans "Unread" %}
             </button>
         {% else %}
             <!-- Кнопка "Read" -->
@@ -35,7 +37,7 @@
                     hx-put="{% url 'update_book_status' book.id %}"
                     hx-target="closest tr"
                     hx-swap="outerHTML">
-                Read
+                {% trans "Read" %}
             </button>
         {% endif %}
     </td>
@@ -47,7 +49,7 @@
                 hx-put="{% url 'update_book_details' book.id %}"
                 hx-target="closest tr"
                 hx-swap="outerHTML">
-            Edit
+            {% trans "Edit" %}
         </button>
 
         <!-- Кнопка "Delete" -->
@@ -55,8 +57,8 @@
                 hx-delete="{% url 'delete_book' book.id %}"
                 hx-target="closest tr"
                 hx-swap="outerHTML"
-                hx-confirm="Are you sure you wish to delete this book?">
-            Delete
+                hx-confirm="{% trans 'Are you sure you wish to delete this book?' %}">
+            {% trans "Delete" %}
         </button>
     </td>
 </tr>

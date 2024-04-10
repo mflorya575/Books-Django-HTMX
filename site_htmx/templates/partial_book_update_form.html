@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <tr class="{% if book.read %}grey-text{% endif %}">
     <!-- Ячейка номера книги -->
     <td class="align-middle text-center ps-2">
@@ -24,12 +26,12 @@
         {% if not book.read %}
             <!-- Кнопка "Unread" -->
             <button class="table-button status-button btn btn-primary btn-sm" disabled>
-                Unread
+                {% trans "Unread" %}
             </button>
         {% else %}
             <!-- Кнопка "Read" -->
             <button class="table-button status-button btn btn-secondary btn-sm" disabled>
-                Read
+                {% trans "Read" %}
             </button>
         {% endif %}
     </td>
@@ -43,14 +45,14 @@
                 hx-target="closest tr"
                 hx-swap="outerHTML"
                 hx-include="closest tr">
-            Save
+            {% trans "Save" %}
         </button>
         <!-- Кнопка "Cancel" -->
         <button class="table-button any-button btn btn-warning btn-sm"
                 hx-get="{% url 'book_detail' book.id %}"
                 hx-target="closest tr"
                 hx-swap="outerHTML">
-            Cancel
+            {% trans "Cancel" %}
         </button>
     </td>
 </tr>
